@@ -32,17 +32,11 @@ public class DataImporter {
 	}
 
 	@PostConstruct
+//	TODO
+//	check if data is imported
+//	if not import the data
 	public void init() {
-		Page<Movie> page = movieRepository.findAll(PageRequest.of(0, 1));
-		if (page.getTotalElements() > 0) {
-			log.info("Skipping data import");
-			return;
-		}
-		log.info("Importing data.");
-		List<Movie> movies = loadMoviesFromFile();
-		log.info("Movies found: {}", movies.size());
-		movies.stream().forEach((m) -> movieRepository.save(m));
-		log.info("Import finished.");
+
 	}
 
 	private List<Movie> loadMoviesFromFile() {
