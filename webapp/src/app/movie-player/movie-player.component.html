@@ -6,8 +6,8 @@
 </div>
 <div class="modal-body">
   <div>
-    <video width="770em" src="https://s3.eu-central-1.amazonaws.com/mymovdb/{{movie.key}}" controls>
-      <source src="https://s3.eu-central-1.amazonaws.com/mymovdb/axe.mp4" type="video/mp4">
+    <video width="770em"  controls>
+      <source src="{{bucketUrl}}/{{movie.key}}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>

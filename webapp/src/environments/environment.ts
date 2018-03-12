@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  movieUrlBase: 'https://s3.eu-central-1.amazonaws.com/mymovdb/'
+  bucketUrl: 'https://s3.eu-central-1.amazonaws.com/mymovdb'
 };
