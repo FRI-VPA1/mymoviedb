@@ -1,7 +1,7 @@
 <section class="jumbotron text-center">
   <div class="container">
     <h1 class="jumbotron-heading">My Movie Database</h1>
-    <p class="lead text-muted">My Home videos I can watch anytime. Everyone of them is legal of course.
+    <p class="lead text-muted">My Home videos I can watch anytime. All of them is legal of course.
     </p>
     <div>
       <div class="text-center">
@@ -20,7 +20,6 @@
     <div class="col-md-3"></div>
     <div class="col-md-6">
       <div class="card">
-        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
         <div class="card-body">
           <h4 class="card-title">{{movie.title}}</h4>
           <hr/>
@@ -38,11 +37,11 @@
                 <p><b>Director:</b> {{movie.director}} </p>
               </div>
               <div class="col-md-6">
-                <p><b>Notes:</b> {{movie.director}} </p>
+                <p><b>Notes:</b> {{movie.notes}} </p>
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary">Watch Movie</button>
+          <button type="button" class="btn btn-primary" (click)="playMovie(movie)">Watch Movie</button>
         </div>
       </div>
     </div>
