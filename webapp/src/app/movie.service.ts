@@ -13,14 +13,14 @@ export class MovieService {
     let params = new HttpParams()
     params.set('page', page.toString());
     params.set('size', size.toString());
-    return this.httpClient.get<Movie[]>('/movies', {params: params});
+    return this.httpClient.get<Movie[]>('http://localhost:8080/movies', {params: params});
   }
 
   public searchMovies(searchTerm: string, page: number = 0, size: number = 10): Observable<Movie[]> {
     let params = new HttpParams()
     params.set('page', page.toString());
     params.set('size', size.toString());
-    return this.httpClient.get<Movie[]>(`/search/${searchTerm}`, {params: params});
+    return this.httpClient.get<Movie[]>(`http://localhost:8080/search/${searchTerm}`, {params: params});
   }
 
 }

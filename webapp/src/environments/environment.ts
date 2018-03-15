@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  bucketUrl: 'https://s3.eu-central-1.amazonaws.com/mymovdb'
+  bucketUrl: 'http://s3-eu-west-1.amazonaws.com/fri-demo'
 };
